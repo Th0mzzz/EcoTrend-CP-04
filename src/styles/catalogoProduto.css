@@ -1,0 +1,171 @@
+/* === Tokens (ajuste fino do Figma) === */
+@import "./variables.css";
+@import "./index.css";
+
+:root{
+  --gap: 40px;            /* espaço entre sidebar e grid */
+  --radius: 5px;
+}
+
+/* Fundo geral igual ao Figma */
+.catalog-canvas{
+  background: var(--fundo);
+}
+
+/* Container branco com borda, cantos e offsets EXATOS */
+.catalog-container{
+  margin-left: 150px;
+  margin-top: 15px;
+  margin-right: 150px;       
+  background: var(--container);
+  border: 1px solid var(--borda);
+  border-radius: 5px;
+  padding: 28px;
+}
+
+/* Grid de duas colunas: sidebar fixa + conteúdo flexível */
+.catalog-layout{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: var(--gap);
+}
+
+/* --- Sidebar --- */
+.catalog-sidebar .title{
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--texto);
+  margin: 0 0 12px;
+  font-family: var(--ff-title);
+  
+}
+
+.cat-list{
+  padding: 8px 0;
+}
+
+.cat-list a{
+  display: block;
+  padding: 8px 0;
+  color: var(--texto);
+  font-family: var(--ff-link);
+}
+
+/* Filtros “flat”, com linhas e chevron à direita */
+.filter-group{
+  border-bottom: 1px solid var(--borda);
+}
+
+.filter-toggle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  background: transparent;
+  font-size: 16px;
+  color: var(--texto);
+  font-family: var(--ff-link);
+}
+
+/* Setinha feita em CSS (gira ao abrir) */
+.filter-toggle::after{
+  content: "▾";
+  font-size: 16px;
+  transition: transform .2s ease;
+}
+
+.filter-toggle.collapsed::after{
+  transform: rotate(-90deg); /* apontando para a direita quando fechado */
+}
+
+/* Corpo do filtro enxuto */
+.filter-body{
+  padding: 0 0 16px;
+}
+
+.form-check{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: var(--borda);
+}
+
+/* --- Barra de ordenação --- */
+.catalog-toolbar{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+
+}
+
+.sort-select{
+  width: 140px;
+  border: 1px solid var(--borda);
+  background-color: var(--container);
+  border-radius: 8px;
+  padding-right: 28px;
+}
+
+/* --- Grid de produtos (3 colunas como no Figma) --- */
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card minimalista com borda e raio */
+.product-card{
+  border: 1px solid var(--borda);
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--container);
+}
+
+.product-card img{
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.product-info{
+  padding: 12px 14px;
+  border-top: 1px solid var(--borda);
+}
+
+.product-info .name{
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--texto);
+  font-family: var(--ff-link);
+}
+
+.product-info .price{
+  margin: 0;
+  font-weight: 600;
+  color: var(--secundaria);
+  font-family: var(--ff-link); 
+}
+
+/* --- Responsivo --- */
+@media (max-width: 1200px){
+  .product-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 992px){
+  .catalog-container{
+    margin-left: 16px;    /* em telas menores, usa margens padrão */
+    margin-right: 16px;
+  }
+  .catalog-layout{
+    grid-template-columns: 1fr; /* sidebar em cima */
+    row-gap: 24px;
+  }
+}
+
+@media (max-width: 576px){
+  .product-grid{ grid-template-columns: 1fr; }
+}
+
+

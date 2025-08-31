@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/ecotrend-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/src/styles/catalogoProduto.css" />
+    <title>EcoTrend</title>
+</head>
+<body>
+
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand logotipo" href="/index.html">
+          <img src="/src/assets/ecotrend-logo.png" alt="Logo da EcoTrend" />
+          <h1><span style="color: var(--primaria)">Eco</span>Trend</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 d-flex align-items-lg-center gap-3 justify-content-lg-center flex-grow-1"
+          >
+            <li class="nav-item">
+              <a class="link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#">Contate-nos</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 text"
+              type="search"
+              placeholder="Pesquise..."
+              aria-label="Pesquise..."
+            />
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <div class="d-flex align-items-lg-center gap-3 ms-3">
+            <a href="#" class="link">
+              <i class="bi bi-person-circle nav-icon"></i> Entrar
+            </a>
+            <a href="#" class="link">
+              <i class="bi bi-cart-fill nav-icon"></i> Carrinho
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="cataolog-canvas"> <!-- VER OQUE É ISSO -->
+        <div class="catalog-container">
+            <div class ="catalog-layout">
+
+            <!-- Sidebar -->
+            <aside class="catalog-sidebar">
+                <h3 class="title">Categorias</h3>
+                <ul class="cat-list">
+                    <li><a href="#">Roupas e Acessórios</a></li>
+                    <li><a href="#">Beleza e Cuidados</a></li>
+                    <li><a href="#">Casa</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                </ul>
+
+                <h3 class="title mt-4">Filtrar</h3>
+
+
+                <!-- Grupo: Preço -->
+                <div class="filter-group">
+                    <button class="filter-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#f-preco" aria-expanded="false">
+                        <span>Preço</span>
+                    </button>
+                    <div id="f-preco" class="collapse">
+                        <div class="filter-body">
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Até R$ 50,00</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>R$ 51,00-100,00</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Acima de R$ 100,00</span></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Filtro Tamanho -->
+                <div class="filter-group">
+                    <button class="filter-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#f-tamanho">
+                        <span>Tamanho</span>
+                    </button>
+                    <div id="f-tamanho" class="collapse">
+                        <div class="filter-body">
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>P</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>M</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>G</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filtro Gênero -->
+                 <div class="filter-group">
+                    <button class="filter-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#f-genero">
+                        <span>Gênero</span>
+                    </button>
+                    <div id="f-genero" class="collapse">
+                        <div class="filter-body">
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Masculino</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Feminino</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Unissex</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filtro Tipo -->
+                 <div class="filter-group">
+                    <button class="filter-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#f-tipo">
+                        <span>Tipo</span>
+                    </button>
+                    <div id="f-tipo" class="collapse">
+                        <div class="filter-body">
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Roupas</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Acessórios</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Beleza</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Casa</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Tecnologia</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filtro Materiais -->
+                 <div class="filter-group">
+                    <button class="filter-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#f-materiais">
+                        <span>Materiais</span>
+                    </button>
+                    <div id="f-materiais" class="collapse">
+                        <div class="filter-body">
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Algodão Orgânico</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Bambu</span></label>
+                            <label class="form-check"><input class="form-check-input" type="checkbox"> <span>Reciclado</span></label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+                <!-- Filtro Materiais -->
+                 <section class="catalog-main">
+                    <div class="catalog-toolbar">
+                        <select class="form-select form-select-sm sort-select">
+                            <option selected>Ordenar por</option>
+                            <option>Mais recentes</option>
+                            <option>Menor preço</option>
+                            <option>Maior preço</option>
+                            <option>Mais vendidos</option>
+                        </select>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Card exemplo 1 -->
+                         <article class="product-card">
+                            <img src="https://via.placeholder.com/540x400" alt="Produto">
+                            <div class="product-info">
+                                <p class="name">Óleo hidratante de coco com casca de laranja</p>
+                                <p class="price">R$ 49,99</p>
+                            </div>
+                         </article>
+
+                         <!-- Card exemplo 2 -->
+                          <article class="product-card">
+                            <img src="https://via.placeholder.com/540x400" alt="Produto">
+                            <div class="product-info">
+                                <p class="name">Vestido Longo com laço bege</p>
+                                <p class="price">R$ 140,99</p>
+                            </div>
+                         </article>
+
+                         <!-- Card exemplo 3 -->
+                          <article class="product-card">
+                            <img src="https://via.placeholder.com/540x400" alt="Produto">
+                            <div class="product-info">
+                                <p class="name">Camisa Masculina Verde</p>
+                                <p class="price">R$ 109,99</p>
+                            </div>
+                         </article>
+
+                         <!-- Card exemplo 4 -->
+                          <article class="product-card">
+                            <img src="https://via.placeholder.com/540x400" alt="Produto">
+                            <div class="product-info">
+                                <p class="name">Camisa Masculina Verde</p>
+                                <p class="price">R$ 109,99</p>
+                            </div>
+                         </article>
+
+                         <!-- Card exemplo 5 -->
+                          <article class="product-card">
+                            <img src="https://via.placeholder.com/540x400" alt="Produto">
+                            <div class="product-info">
+                                <p class="name">Camisa Masculina Verde</p>
+                                <p class="price">R$ 109,99</p>
+                            </div>
+                         </article>
+
+                         <!-- Card exemplo 6 -->
+                          <article class="product-card">
+                            <img src="https://via.placeholder.com/540x400" alt="Produto">
+                            <div class="product-info">
+                                <p class="name">Camisa Masculina Verde</p>
+                                <p class="price">R$ 109,99</p>
+                            </div>
+                         </article>
+                    </div>
+                 </section>
+            
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer">
+      <div class="content">
+        <a class="logotipo" href="/index.html">
+          <img src="/src/assets/ecotrend-logo.png" alt="Logo da EcoTrend" />
+          <h1><span style="color: var(--primaria)">Eco</span>Trend</h1>
+        </a>
+        <p class="link">© 2025 EcoTrend. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</html>
