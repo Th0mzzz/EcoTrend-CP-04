@@ -1,0 +1,62 @@
+@import "./reset.css";
+@import "./variables.css";
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.title {
+  font-size: clamp(29px, 2.5vw, 32px);
+  font-family: var(--ff-title);
+  font-weight: 900;
+}
+.subtitle {
+  font-size: clamp(23px, 2vw, 25px);
+  font-family: var(--ff-subtitle);
+  font-weight: 700;
+}
+.link {
+  font-size: 14px;
+  font-family: var(--ff-link);
+  font-weight: 600;
+}
+.text {
+  font-size: 13px;
+  font-family: var(--ff-text);
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--texto);
+  h1 {
+    font-size: clamp(25px, 2vw, 28px);
+    font-family: var(--ff-title);
+    font-weight: 700;
+    margin: 0;
+  }
+  & img {
+    width: 55px;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+}
+
+
+/* header */
+#header {
+  background-color: var(--container);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--borda);
+
+  & .navbar {
+    max-width: var(--alinhamento);
+  }
+}

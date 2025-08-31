@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --primaria: #00ff9c;
+  --secundaria: #02383c;
+  --texto: #2c272e;
+  --borda: #02383c33;
+  --fundo: #f3f8ff;
+  --container: #ffffff;
+  --alinhamento: 1140px;
+  --ff-text: "Rubik", sans-serif;
+  --ff-title: "Raleway", sans-serif;
+  --ff-subtitle: "Nunito", sans-serif;
+  --ff-logo: "Nunito", sans-serif;
+  --ff-link: "Nunito", sans-serif;
+}
