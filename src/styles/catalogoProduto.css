@@ -1,0 +1,175 @@
+@import "./variables.css";
+@import "./index.css";
+
+:root{
+  --gap: 40px;          
+  --radius: 5px;
+}
+
+.catalog{
+  background: var(--fundo);
+}
+
+.catalog-container{
+  margin-left: 150px;
+  margin-top: 15px;
+  margin-right: 150px;       
+  background: var(--container);
+  border: 1px solid var(--borda);
+  border-radius: 5px;
+  padding: 28px;
+}
+
+.catalog-layout{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: var(--gap);
+}
+
+.catalog-sidebar .title{
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--texto);
+  margin: 0 0 12px;
+  font-family: var(--ff-title);
+  
+}
+
+.category-list{
+  padding: 8px 0;
+}
+
+.category-list a{
+  display: block;
+  padding: 8px 0;
+  color: var(--texto);
+  font-family: var(--ff-link);
+}
+
+.filter{
+  border-bottom: 1px solid var(--borda);
+}
+
+.filter-toggle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  background: transparent;
+  font-size: 16px;
+  color: var(--texto);
+  font-family: var(--ff-link);
+}
+
+.filter-toggle::after{
+  content: "▾";
+  font-size: 16px;
+  transition: transform .2s ease;
+}
+
+.filter-toggle.collapsed::after{
+  transform: rotate(-90deg);
+}
+
+.filter-body{
+  padding: 0 0 16px;
+}
+
+.form-check{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: var(--borda);
+}
+
+.catalog-toolbar{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+
+}
+
+.sort-select{
+  width: 140px;
+  border: 1px solid var(--borda);
+  background-color: var(--container);
+  border-radius: 8px;
+  padding-right: 28px;
+}
+
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.product-card{
+  border: 1px solid var(--borda);
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--container);
+}
+
+.product-card img{
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.product-info{
+  padding: 10px;
+  border-top: 1px solid var(--borda);
+  
+}
+
+.btn-cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--texto);
+  justify-content: right;
+  display: flex;
+  margin-left: auto
+}
+
+.btn-cart:hover {
+  color: var(--secundaria); 
+}
+
+.product-info .name{
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--texto);
+  font-family: var(--ff-link);
+}
+
+.product-info .price{
+  margin: 0;
+  font-weight: 600;
+  color: var(--secundaria);
+  font-family: var(--ff-link); 
+}
+
+@media (max-width: 1200px){
+  .product-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 992px){
+  .catalog-container{
+    margin-left: 16px;    
+    margin-right: 16px;
+  }
+  .catalog-layout{
+    grid-template-columns: 1fr; 
+    row-gap: 24px;
+  }
+}
+
+@media (max-width: 576px){
+  .product-grid{ grid-template-columns: 1fr; }
+}
+
+
