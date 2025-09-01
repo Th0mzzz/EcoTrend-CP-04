@@ -111,3 +111,36 @@ body {
     border-color: var(--borda) !important;
   }
 }
+
+
+/* animaçao na area de beleza e roupa */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* carrinho */
+
+.carrinho-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 1.3rem;
+  color: black; 
+  text-decoration: none;
+}
+
+.carrinho-icon:hover {
+  color: var(--secundaria);
+}
+
+.card-text {
+  font-size: 13px;
+  font-family: var(--ff-text);
+  color: var(--secundaria)
+}
