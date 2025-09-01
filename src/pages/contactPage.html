@@ -16,48 +16,117 @@
     <link rel="stylesheet" href="/src/styles/contactPage.css">
     <title>Contact</title>
 </head>
+<header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand logotipo" href="/index.html">
+          <img src="/src/assets/ecotrend-logo.png" alt="Logo da EcoTrend" />
+          <h1><span style="color: var(--primaria)">Eco</span>Trend</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 d-flex align-items-lg-center gap-3 justify-content-lg-center flex-grow-1"
+          >
+            <li class="nav-item">
+              <a class="link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#">Contate-nos</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 text"
+              type="search"
+              placeholder="Pesquise..."
+              aria-label="Pesquise..."
+            />
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <div class="d-flex align-items-lg-center gap-3 ms-3">
+            <a href="#" class="link">
+              <i class="bi bi-person-circle nav-icon"></i> Entrar
+            </a>
+            <a href="#" class="link">
+              <i class="bi bi-cart-fill nav-icon"></i> Carrinho
+            </a>
+          </div>
+        </div>
+      </nav>
+</header>
+
+    <div class="contact-banner">
+        <h1 class="display-5">Nos contate</h1>
+        <p>Precisa de ajuda? Sinta-se à vontade para deixar suas informações de contato e entraremos em contato em breve.</p>
+    </div>
+
 
     <div class="row contact-container">
-        <div class="col-6 container-section">
+        <div class="col-xs-2 col-md-6 col-lg-6 container-section g-4">
             <form>
                 <div class="row">
                     <div class="col-6">
                         <label for="" class="form-label">Email</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="E-mail*">
                     </div>
                     
                     <div class="col-6">
                         <label for="" class="form-label">Nome</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="Nome*">
                     </div>
                     
                 </div>
                 
                 <label for="" class="form-label">Telefone</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" placeholder="Telefone*">
                 
                 <label for="" class="form-label">Mensagem</label>
-                <input type="text" class="form-control">
+                <textarea name="" id="" placeholder="Assunto*" class="form-control"></textarea>
                 
                 <button class="btn btn-primary">Enviar</button>
             </form>
         </div>
             
 
-        <div class="col-6 row container-section">
-            <div class="col-3 container-card">
+        <div class="col-xs-2 col-md-6 col-lg-6 row container-section g-4">
+            <div class="col-xs-2 col-lg-3 container-card">
                 <i class="bi bi-telephone-fill"></i>
-                <h3>Venha nos visitar</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, culpa?</p>
-                <p class="highlighted">Rua Jóse Coutinho 2, SP</p>       
+                <h3>Ligue para nós</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem distinctio dolor ipsum voluptatem ratione?</p>
+                <p class="highlighted">+55 (11) 9768-6004</p>       
             </div>
-            <div class="col-3 container-card">
+            <div class="col-xs-2 col-lg-3 container-card">
                 <i class="bi bi-envelope"></i>
-                <h3>Venha nos visitar</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, culpa?</p>
-                <p class="highlighted">Rua Jóse Coutinho 2, SP</p>       
+                <h3>Nos Contate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur deserunt impedit nemo numquam adipisci.</p>
+                <p class="highlighted">ecotrendtda@gmail.com</p>       
             </div>
         </div>
     </div>
+
+    <footer id="footer">
+      <div class="content">
+        <a class="logotipo" href="/index.html">
+          <img src="/src/assets/ecotrend-logo.png" alt="Logo da EcoTrend" />
+          <h1><span style="color: var(--primaria)">Eco</span>Trend</h1>
+        </a>
+        <p class="link">© 2025 EcoTrend. Todos os direitos reservados.</p>
+      </div>
+    </footer>
 </body>
 </html>
