@@ -1,0 +1,46 @@
+@import "./variables.css";
+@import "./index.css";
+
+.contact-container{
+    margin: 20px;
+}
+
+.container-section{
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+}
+
+.container-card{
+   width: 50%;
+}
+
+.container-card i{
+    font-size: 50px;
+    color: var(--primaria);
+}
+
+.contact-container .highlighted{
+    font-weight: bold;
+    color: var(--primaria);
+}
+
+
+form{
+    background-color: var(--container);
+
+    border: 3px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-color: var(--borda);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+form button{
+    margin-top: 10px;
+}
