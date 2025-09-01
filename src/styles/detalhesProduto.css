@@ -103,3 +103,36 @@
   box-sizing: border-box;
 }
 
+.similar-products-container {
+  display: grid;
+  grid-direction: column;
+  grid-template-columns: repeat(4, 1fr);
+  width: 50%;
+  gap: 1rem;
+
+}
+
+.card-title {
+  font-family: var(--ff-title);
+  font-size: 16px;
+}
+
+.card-text {
+  font-family: var(--ff-text);
+  font-size: 13px;
+}
+.price-similar-product {
+  color: var(--secundaria);
+  font-weight: 400;
+  margin: 0;
+}
+
+.similar-products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.card {
+  width: 100%;
+}
