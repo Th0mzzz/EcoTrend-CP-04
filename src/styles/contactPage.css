@@ -45,7 +45,7 @@
 }
 
 
-form{
+.contact-form{
     background-color: var(--container);
     border: 3px solid;
     border-color: var(--borda);
@@ -58,11 +58,11 @@ form{
     font-weight: bold;
 }
 
-form textarea{
+.contact-form textarea{
     height:150px;
 }
 
-form .btn{
+.contact-form .btn{
     margin-top: 10px;
     font-weight: bold;
     padding: 2px 50px;
