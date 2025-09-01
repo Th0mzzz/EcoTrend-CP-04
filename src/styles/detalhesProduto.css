@@ -1,18 +1,24 @@
+@import "./reset.css";
+@import "./variables.css";
+
+
 .product-container {
     display: flex;
     flex-direction: row;
     margin: 10px;
     justify-content: center;
     & img {
-      width: 500px;
+      width: 25%;
       margin-right: 10px;
+      border: 1px solid #02383C;
+      border-radius: 5px;
     }
 }
 
 .product-detail{
-  border-radius: 2px;
-  border: solid 1px #02383C4D;
-  & p {
+  border-radius: 5px;
+  border: solid 1px #02383C;
+  & p,select {
     margin-left: 10px;
   }
 }
@@ -23,23 +29,25 @@
   border-radius: 6px;
   padding: 5px;
   margin-top: 5px;
+  font-family: var( --ff-text);
 }
 
-.product-title {
-  font-family: Nunito;
+.title {
+  font-family: var(--ff-subtitle);
   font-size: 25px;
+  font-weight: 400;
 }
 
 .product-description {
   margin: 0;
-  font-family: Rubik;
+  font-family: var( --ff-text);
   font-size: 13px;
 }
 
 .price-with-discount {
   color: #02383C;
   font-size: 32px;
-  font-family: Raleway;
+  font-family: var( --ff-title);
   font-weight: bold;
 }
 
@@ -50,7 +58,7 @@
 }
 
 .quantity {
-  font-family: Nunito;
+  font-family: var(--ff-subtitle);
   font-size: 18px;
 }
 
@@ -59,8 +67,39 @@
   height: 30px;
   border-radius: 5px;
   border: solid 1px #02383C4D;
-  font-family: Nunito;
+  font-family: var(--ff-subtitle);
   font-size: 16px;
   padding-left: 5px;
-  margin-left: 10px;
 }
+
+.add-to-cart {
+  background-color: #00e68a;
+  border-radius: 5px;
+  font-family: var(--ff-subtitle);
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.add-to-cart:hover {
+  cursor: pointer;
+  background-color: #01cf7d;
+  transition: ease-in-out 0.5s;
+}
+
+.product-complete-description{
+  border: 1px solid #02383C;
+  font-size: 13px;
+  border-radius: 5px;
+  font-family: var( --ff-text);
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 56%;
+  box-sizing: border-box;
+}
+
