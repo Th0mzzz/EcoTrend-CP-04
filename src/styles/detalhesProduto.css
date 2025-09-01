@@ -1,0 +1,66 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+    & img {
+      width: 500px;
+      margin-right: 10px;
+    }
+}
+
+.product-detail{
+  border-radius: 2px;
+  border: solid 1px #02383C4D;
+  & p {
+    margin-left: 10px;
+  }
+}
+
+.category {
+  background-color: #35e7a399;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.product-title {
+  font-family: Nunito;
+  font-size: 25px;
+}
+
+.product-description {
+  margin: 0;
+  font-family: Rubik;
+  font-size: 13px;
+}
+
+.price-with-discount {
+  color: #02383C;
+  font-size: 32px;
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+.price-without-discount {
+  margin-bottom: 0;
+  margin-top: 5px;
+  text-decoration: line-through;
+}
+
+.quantity {
+  font-family: Nunito;
+  font-size: 18px;
+}
+
+#select-quantidade {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #02383C4D;
+  font-family: Nunito;
+  font-size: 16px;
+  padding-left: 5px;
+  margin-left: 10px;
+}
