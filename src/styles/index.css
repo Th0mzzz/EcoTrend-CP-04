@@ -147,3 +147,9 @@ body {
   overflow: hidden;
   border: 1px solid var(--borda);
 }
+
+.container{
+  max-width: var(--alinhamento);
+  margin: 0 auto;
+  padding: 0 15px;
+}
