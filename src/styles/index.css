@@ -112,9 +112,6 @@ body {
   }
 }
 
-
-/* animaçao na area de beleza e roupa */
-
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -124,14 +121,12 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* carrinho */
-
 .carrinho-icon {
   position: absolute;
   bottom: 5px;
   right: 10px;
   font-size: 1.3rem;
-  color: black; 
+  color: black;
   text-decoration: none;
 }
 
@@ -142,5 +137,19 @@ body {
 .card-text {
   font-size: 13px;
   font-family: var(--ff-text);
-  color: var(--secundaria)
+  color: var(--secundaria);
+}
+
+#carouselHome {
+  max-width: var(--alinhamento);
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--borda);
+}
+
+.container{
+  max-width: var(--alinhamento);
+  margin: 0 auto;
+  padding: 0 15px;
 }
