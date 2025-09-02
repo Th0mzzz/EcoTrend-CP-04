@@ -25,6 +25,6 @@ O projeto consiste em uma página de e-commerce voltada para produtos sustentáv
 
 ## 🖼️ Layout do Projeto  
 
-![Imagem do Projeto]()  
+![Imagem do Projeto](./src/assets/print.png)  
 
 ---
